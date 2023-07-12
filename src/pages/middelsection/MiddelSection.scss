@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+.main_div_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.main_image {
+  width: 24rem;
+  opacity: 5;
+  
+}
+.middel_div_text {
+  color: white;
+  width: 26rem;
+  text-align: justify;
+  float: right;
+  
+}
+.sticky {
+  margin-left: 15%;
+  background-color: #ff6d6d;
+}
+
+

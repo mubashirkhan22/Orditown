@@ -1,0 +1,28 @@
+* {
+  // background-image: url(../../assets/images/Background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.image_div {
+  margin-top: 10rem;
+}
+.buttons_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30rem;
+  margin-left: 28rem;
+}
+.input_text{
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+
+}
+.input_text:focus{
+  border: none;
+}

@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+$color-accent: #e6a71e;
+$color-accent2: #b837fc;
+$color-primary: rgba(11, 105, 88, 1);
+$color-secondary: rgba(6, 26, 26, 1);
+$color-red: rgba(232, 83, 87, 1);
+$color-blue: rgba(17, 36, 55, 1);
+
+$decorator-size: 10px;
+$border-width: 1px;
+$border-offset-start: 1px;
+$border-offset-end: 6px;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+.button {
+    margin: 0 20px;
+    padding: 20px 40px;
+    position: relative;
+    background-color: #333;
+    border: $border-width solid #444;
+    color: $color-accent;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    font-family: "Space Mono", monospace;
+  }
+  
+  .main_button_div {
+    margin-top: 3rem;
+  }
+  
+  .button:first-of-type {
+    margin-left: 0px;
+  }
+  
+  .button:last-of-type {
+    margin-right: 0px;
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button:hover {
+    position: relative;
+    border: $border-width solid transparent;
+    background-color: darken($color-accent, 25);
+    color: whitesmoke;
+    animation: 0.07s flicker;
+    animation-iteration-count: 2;
+    transition: all 0.35s cubic-bezier(0.75, 0, 0.25, 1);
+  }
+  .button_second:hover {
+    position: relative;
+    border: $border-width solid transparent;
+    background-color: darken($color-accent, 25);
+    color: whitesmoke;
+    animation: 0.07s flicker;
+    animation-iteration-count: 2;
+    transition: all 0.35s cubic-bezier(0.75, 0, 0.25, 1);
+  }
+  
+  .button:focus {
+    background-color: darken($color-accent, 25);
+  }
+  .button_second:focus {
+    background-color: darken($color-accent, 25);
+  }
+  
+  .decorator {
+    position: absolute;
+    width: $decorator-size;
+    height: $decorator-size;
+    border: $border-width solid transparent;
+    animation: 0.1s flicker;
+    animation-iteration-count: 3;
+    transition: all 0.35s cubic-bezier(0.75, 0, 0.25, 1);
+  }
+  
+  .decorator.top {
+    top: $border-offset-start * -1;
+    border-top: $border-width solid $color-accent;
+  }
+  
+  .decorator.bottom {
+    bottom: $border-offset-start * -1;
+    border-bottom: $border-width solid $color-accent;
+  }
+  
+  .decorator.left {
+    left: $border-offset-start * -1;
+    border-left: $border-width solid $color-accent;
+  }
+  
+  .decorator.right {
+    right: $border-offset-start * -1;
+    border-right: $border-width solid $color-accent;
+  }
+  
+  .button:hover .decorator.top {
+    top: ($decorator-size + $border-offset-end) * -1;
+    border-top: $border-width solid $color-accent;
+  }
+  
+  .button:hover .decorator.bottom {
+    bottom: ($decorator-size + $border-offset-end) * -1;
+    border-bottom: $border-width solid $color-accent;
+  }
+  
+  .button:hover .decorator.left {
+    left: ($decorator-size + $border-offset-end) * -1;
+    border-left: $border-width solid $color-accent;
+  }
+  
+  .button:hover .decorator.right {
+    right: ($decorator-size + $border-offset-end) * -1;
+    border-right: $border-width solid $color-accent;
+  }
+  
+  
+  @keyframes flicker {
+    0%,
+    50% {
+      opacity: 0;
+    }
+    51%,
+    100% {
+      opacity: 1;
+    }
+  }

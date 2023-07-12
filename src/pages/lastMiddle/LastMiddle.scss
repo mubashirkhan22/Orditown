@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+.main_div_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  .logo_image {
+    width: 35rem;
+  }
+  .middel_div_text {
+    color: white;
+    width: 26rem;
+    text-align: justify;
+  }
+}

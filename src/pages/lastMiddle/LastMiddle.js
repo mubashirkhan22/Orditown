@@ -12,7 +12,7 @@ function LastMiddle() {
                     speed={0.5}
                 >
 
-                    <div className='middel_div_text' style={{ marginRight: '55%' }}>
+                    <div className='middel_div_text sticky-text' >
                         <h3 style={{ color: '#B837FC' }}>What is the Orditwon Appstore?</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -32,7 +32,7 @@ function LastMiddle() {
                     sticky={{ start: 2.1, end: 2.1 }}
 
                 >
-                    <img src={logo2} alt='' className='logo_image' style={{ marginLeft: '60%', marginTop: '-10%' }} />
+                    <img src={logo2} alt='' className='logo_image sticky-image' />
                 </ParallaxLayer>
 
             </div>

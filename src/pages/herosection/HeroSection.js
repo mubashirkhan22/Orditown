@@ -11,7 +11,7 @@ function HeroSection() {
     <>
       <div>
         <h4 style={{ color: 'white', textAlign: "center" }}>Welcome to</h4>
-        <div style={{ display: "flex", justifyContent: "center" }} >
+        <div style={{ display: "flex", justifyContent: "center" }} className='image_div-heading' >
           <img src={img2} alt='' />
         </div>
 
